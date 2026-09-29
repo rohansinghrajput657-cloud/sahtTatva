@@ -75,6 +75,16 @@ html, body, [class*="css"] { font-family: 'Inter', system-ui, -apple-system, san
 }
 .section-title { font-size: 1.25rem; font-weight: 700; margin: 22px 0 10px; }
 .hint { font-size: .85rem; opacity: .6; }
+
+/* Hide Streamlit default header, footer & badges */
+#MainMenu {visibility: hidden; display: none !important;}
+footer {visibility: hidden; display: none !important;}
+header {visibility: hidden; display: none !important;}
+div[class*="viewerBadge"] {display: none !important;}
+.viewerBadge_container__1QSob {display: none !important;}
+.viewerBadge_link__1S137 {display: none !important;}
+#Manage-app-button {display: none !important;}
+a[href*="streamlit.io"] {display: none !important;}
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
