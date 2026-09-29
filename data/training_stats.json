@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-09-29T02:45:33.902979+05:30",
+  "cities": {
+    "Lucknow": {
+      "lat": 26.85,
+      "lon": 80.95
+    },
+    "Varanasi": {
+      "lat": 25.32,
+      "lon": 82.99
+    },
+    "Prayagraj": {
+      "lat": 25.45,
+      "lon": 81.85
+    },
+    "Kanpur": {
+      "lat": 26.45,
+      "lon": 80.35
+    },
+    "Agra": {
+      "lat": 27.18,
+      "lon": 78.02
+    },
+    "Meerut": {
+      "lat": 28.98,
+      "lon": 77.71
+    },
+    "Gorakhpur": {
+      "lat": 26.76,
+      "lon": 83.37
+    },
+    "Bareilly": {
+      "lat": 28.37,
+      "lon": 79.43
+    },
+    "Jhansi": {
+      "lat": 25.45,
+      "lon": 78.57
+    },
+    "Ayodhya": {
+      "lat": 26.8,
+      "lon": 82.2
+    },
+    "Mirzapur": {
+      "lat": 25.15,
+      "lon": 82.57
+    },
+    "Saharanpur": {
+      "lat": 29.97,
+      "lon": 77.55
+    }
+  },
+  "models": [
+    "gfs_seamless",
+    "icon_seamless",
+    "gem_seamless"
+  ],
+  "variables": [
+    "temperature_2m",
+    "precipitation",
+    "wind_speed_10m"
+  ],
+  "per_city_train_days": {
+    "Lucknow": 24,
+    "Varanasi": 24,
+    "Prayagraj": 24,
+    "Kanpur": 24,
+    "Agra": 24,
+    "Meerut": 24,
+    "Gorakhpur": 24,
+    "Bareilly": 24,
+    "Jhansi": 24,
+    "Ayodhya": 24,
+    "Mirzapur": 24,
+    "Saharanpur": 24
+  },
+  "per_city_test_days": {
+    "Lucknow": 6,
+    "Varanasi": 6,
+    "Prayagraj": 6,
+    "Kanpur": 6,
+    "Agra": 6,
+    "Meerut": 6,
+    "Gorakhpur": 6,
+    "Bareilly": 6,
+    "Jhansi": 6,
+    "Ayodhya": 6,
+    "Mirzapur": 6,
+    "Saharanpur": 6
+  },
+  "n_city_correctors": 108,
+  "n_global_correctors": 9,
+  "training_rows_pooled": 20736
+}

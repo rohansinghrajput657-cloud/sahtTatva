@@ -1,0 +1,923 @@
+{
+  "generated_at": "2026-09-29T02:45:34.044728+05:30",
+  "method": "inverse test-RMSE (corrected if it beats raw, else raw ) \u2014 do-no-harm gate, normalised to sum 1",
+  "note": "Weights are identical across lead bands in this prototype because training pairs are model-analysis vs ERA5 (no true lead-time dimension). The structure supports band-varying weights with true forecast archives.",
+  "weights": {
+    "per_city": {
+      "Lucknow": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.3263733642942268,
+            "icon_seamless": 0.34059322048130436,
+            "gem_seamless": 0.33303341522446883
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3263733642942268,
+            "icon_seamless": 0.34059322048130436,
+            "gem_seamless": 0.33303341522446883
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3263733642942268,
+            "icon_seamless": 0.34059322048130436,
+            "gem_seamless": 0.33303341522446883
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.33353979702168585,
+            "icon_seamless": 0.33297608199325823,
+            "gem_seamless": 0.3334841209850559
+          },
+          "24-72h": {
+            "gfs_seamless": 0.33353979702168585,
+            "icon_seamless": 0.33297608199325823,
+            "gem_seamless": 0.3334841209850559
+          },
+          "72-168h": {
+            "gfs_seamless": 0.33353979702168585,
+            "icon_seamless": 0.33297608199325823,
+            "gem_seamless": 0.3334841209850559
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.3136578165105692,
+            "icon_seamless": 0.3676431501604897,
+            "gem_seamless": 0.3186990333289412
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3136578165105692,
+            "icon_seamless": 0.3676431501604897,
+            "gem_seamless": 0.3186990333289412
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3136578165105692,
+            "icon_seamless": 0.3676431501604897,
+            "gem_seamless": 0.3186990333289412
+          }
+        }
+      },
+      "Varanasi": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.33620303419906034,
+            "icon_seamless": 0.3461760104729849,
+            "gem_seamless": 0.3176209553279547
+          },
+          "24-72h": {
+            "gfs_seamless": 0.33620303419906034,
+            "icon_seamless": 0.3461760104729849,
+            "gem_seamless": 0.3176209553279547
+          },
+          "72-168h": {
+            "gfs_seamless": 0.33620303419906034,
+            "icon_seamless": 0.3461760104729849,
+            "gem_seamless": 0.3176209553279547
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.31945922117175934,
+            "icon_seamless": 0.3145738962492835,
+            "gem_seamless": 0.36596688257895715
+          },
+          "24-72h": {
+            "gfs_seamless": 0.31945922117175934,
+            "icon_seamless": 0.3145738962492835,
+            "gem_seamless": 0.36596688257895715
+          },
+          "72-168h": {
+            "gfs_seamless": 0.31945922117175934,
+            "icon_seamless": 0.3145738962492835,
+            "gem_seamless": 0.36596688257895715
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.37778542094172446,
+            "icon_seamless": 0.32429323990190434,
+            "gem_seamless": 0.29792133915637115
+          },
+          "24-72h": {
+            "gfs_seamless": 0.37778542094172446,
+            "icon_seamless": 0.32429323990190434,
+            "gem_seamless": 0.29792133915637115
+          },
+          "72-168h": {
+            "gfs_seamless": 0.37778542094172446,
+            "icon_seamless": 0.32429323990190434,
+            "gem_seamless": 0.29792133915637115
+          }
+        }
+      },
+      "Prayagraj": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.3294934121139108,
+            "icon_seamless": 0.36281112167037644,
+            "gem_seamless": 0.3076954662157128
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3294934121139108,
+            "icon_seamless": 0.36281112167037644,
+            "gem_seamless": 0.3076954662157128
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3294934121139108,
+            "icon_seamless": 0.36281112167037644,
+            "gem_seamless": 0.3076954662157128
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.3337842181444068,
+            "icon_seamless": 0.32165952909809575,
+            "gem_seamless": 0.34455625275749746
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3337842181444068,
+            "icon_seamless": 0.32165952909809575,
+            "gem_seamless": 0.34455625275749746
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3337842181444068,
+            "icon_seamless": 0.32165952909809575,
+            "gem_seamless": 0.34455625275749746
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.34858106074911804,
+            "icon_seamless": 0.3526136517044026,
+            "gem_seamless": 0.2988052875464793
+          },
+          "24-72h": {
+            "gfs_seamless": 0.34858106074911804,
+            "icon_seamless": 0.3526136517044026,
+            "gem_seamless": 0.2988052875464793
+          },
+          "72-168h": {
+            "gfs_seamless": 0.34858106074911804,
+            "icon_seamless": 0.3526136517044026,
+            "gem_seamless": 0.2988052875464793
+          }
+        }
+      },
+      "Kanpur": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.2957442905643625,
+            "icon_seamless": 0.3526422428104752,
+            "gem_seamless": 0.3516134666251623
+          },
+          "24-72h": {
+            "gfs_seamless": 0.2957442905643625,
+            "icon_seamless": 0.3526422428104752,
+            "gem_seamless": 0.3516134666251623
+          },
+          "72-168h": {
+            "gfs_seamless": 0.2957442905643625,
+            "icon_seamless": 0.3526422428104752,
+            "gem_seamless": 0.3516134666251623
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.3330689895772552,
+            "icon_seamless": 0.3309663840223076,
+            "gem_seamless": 0.3359646264004373
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3330689895772552,
+            "icon_seamless": 0.3309663840223076,
+            "gem_seamless": 0.3359646264004373
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3330689895772552,
+            "icon_seamless": 0.3309663840223076,
+            "gem_seamless": 0.3359646264004373
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.35872120974670246,
+            "icon_seamless": 0.3318649102893363,
+            "gem_seamless": 0.3094138799639612
+          },
+          "24-72h": {
+            "gfs_seamless": 0.35872120974670246,
+            "icon_seamless": 0.3318649102893363,
+            "gem_seamless": 0.3094138799639612
+          },
+          "72-168h": {
+            "gfs_seamless": 0.35872120974670246,
+            "icon_seamless": 0.3318649102893363,
+            "gem_seamless": 0.3094138799639612
+          }
+        }
+      },
+      "Agra": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.2504594293293276,
+            "icon_seamless": 0.5074322913951241,
+            "gem_seamless": 0.24210827927554823
+          },
+          "24-72h": {
+            "gfs_seamless": 0.2504594293293276,
+            "icon_seamless": 0.5074322913951241,
+            "gem_seamless": 0.24210827927554823
+          },
+          "72-168h": {
+            "gfs_seamless": 0.2504594293293276,
+            "icon_seamless": 0.5074322913951241,
+            "gem_seamless": 0.24210827927554823
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.3335436062937685,
+            "icon_seamless": 0.3204893819954415,
+            "gem_seamless": 0.3459670117107899
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3335436062937685,
+            "icon_seamless": 0.3204893819954415,
+            "gem_seamless": 0.3459670117107899
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3335436062937685,
+            "icon_seamless": 0.3204893819954415,
+            "gem_seamless": 0.3459670117107899
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.3183084416133178,
+            "icon_seamless": 0.3675233227107922,
+            "gem_seamless": 0.3141682356758901
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3183084416133178,
+            "icon_seamless": 0.3675233227107922,
+            "gem_seamless": 0.3141682356758901
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3183084416133178,
+            "icon_seamless": 0.3675233227107922,
+            "gem_seamless": 0.3141682356758901
+          }
+        }
+      },
+      "Meerut": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.3515187020375173,
+            "icon_seamless": 0.31378979949385793,
+            "gem_seamless": 0.3346914984686248
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3515187020375173,
+            "icon_seamless": 0.31378979949385793,
+            "gem_seamless": 0.3346914984686248
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3515187020375173,
+            "icon_seamless": 0.31378979949385793,
+            "gem_seamless": 0.3346914984686248
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.3333333333333333,
+            "icon_seamless": 0.3333333333333333,
+            "gem_seamless": 0.3333333333333333
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3333333333333333,
+            "icon_seamless": 0.3333333333333333,
+            "gem_seamless": 0.3333333333333333
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3333333333333333,
+            "icon_seamless": 0.3333333333333333,
+            "gem_seamless": 0.3333333333333333
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.32392302905537457,
+            "icon_seamless": 0.3573044761652367,
+            "gem_seamless": 0.3187724947793888
+          },
+          "24-72h": {
+            "gfs_seamless": 0.32392302905537457,
+            "icon_seamless": 0.3573044761652367,
+            "gem_seamless": 0.3187724947793888
+          },
+          "72-168h": {
+            "gfs_seamless": 0.32392302905537457,
+            "icon_seamless": 0.3573044761652367,
+            "gem_seamless": 0.3187724947793888
+          }
+        }
+      },
+      "Gorakhpur": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.3128101811563562,
+            "icon_seamless": 0.34387149910540143,
+            "gem_seamless": 0.34331831973824223
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3128101811563562,
+            "icon_seamless": 0.34387149910540143,
+            "gem_seamless": 0.34331831973824223
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3128101811563562,
+            "icon_seamless": 0.34387149910540143,
+            "gem_seamless": 0.34331831973824223
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.30931800698077694,
+            "icon_seamless": 0.33267763660862115,
+            "gem_seamless": 0.3580043564106019
+          },
+          "24-72h": {
+            "gfs_seamless": 0.30931800698077694,
+            "icon_seamless": 0.33267763660862115,
+            "gem_seamless": 0.3580043564106019
+          },
+          "72-168h": {
+            "gfs_seamless": 0.30931800698077694,
+            "icon_seamless": 0.33267763660862115,
+            "gem_seamless": 0.3580043564106019
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.34327980537431213,
+            "icon_seamless": 0.36712708105151204,
+            "gem_seamless": 0.2895931135741758
+          },
+          "24-72h": {
+            "gfs_seamless": 0.34327980537431213,
+            "icon_seamless": 0.36712708105151204,
+            "gem_seamless": 0.2895931135741758
+          },
+          "72-168h": {
+            "gfs_seamless": 0.34327980537431213,
+            "icon_seamless": 0.36712708105151204,
+            "gem_seamless": 0.2895931135741758
+          }
+        }
+      },
+      "Bareilly": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.30892108290850057,
+            "icon_seamless": 0.34527789109401624,
+            "gem_seamless": 0.3458010259974831
+          },
+          "24-72h": {
+            "gfs_seamless": 0.30892108290850057,
+            "icon_seamless": 0.34527789109401624,
+            "gem_seamless": 0.3458010259974831
+          },
+          "72-168h": {
+            "gfs_seamless": 0.30892108290850057,
+            "icon_seamless": 0.34527789109401624,
+            "gem_seamless": 0.3458010259974831
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.32949620216389247,
+            "icon_seamless": 0.34100759567221495,
+            "gem_seamless": 0.32949620216389247
+          },
+          "24-72h": {
+            "gfs_seamless": 0.32949620216389247,
+            "icon_seamless": 0.34100759567221495,
+            "gem_seamless": 0.32949620216389247
+          },
+          "72-168h": {
+            "gfs_seamless": 0.32949620216389247,
+            "icon_seamless": 0.34100759567221495,
+            "gem_seamless": 0.32949620216389247
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.34248861002235914,
+            "icon_seamless": 0.36139573518094775,
+            "gem_seamless": 0.2961156547966931
+          },
+          "24-72h": {
+            "gfs_seamless": 0.34248861002235914,
+            "icon_seamless": 0.36139573518094775,
+            "gem_seamless": 0.2961156547966931
+          },
+          "72-168h": {
+            "gfs_seamless": 0.34248861002235914,
+            "icon_seamless": 0.36139573518094775,
+            "gem_seamless": 0.2961156547966931
+          }
+        }
+      },
+      "Jhansi": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.3212068385750026,
+            "icon_seamless": 0.3633754374985777,
+            "gem_seamless": 0.3154177239264197
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3212068385750026,
+            "icon_seamless": 0.3633754374985777,
+            "gem_seamless": 0.3154177239264197
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3212068385750026,
+            "icon_seamless": 0.3633754374985777,
+            "gem_seamless": 0.3154177239264197
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.3319527257204152,
+            "icon_seamless": 0.3401137837675197,
+            "gem_seamless": 0.327933490512065
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3319527257204152,
+            "icon_seamless": 0.3401137837675197,
+            "gem_seamless": 0.327933490512065
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3319527257204152,
+            "icon_seamless": 0.3401137837675197,
+            "gem_seamless": 0.327933490512065
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.3537629933548793,
+            "icon_seamless": 0.36708630644635615,
+            "gem_seamless": 0.27915070019876453
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3537629933548793,
+            "icon_seamless": 0.36708630644635615,
+            "gem_seamless": 0.27915070019876453
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3537629933548793,
+            "icon_seamless": 0.36708630644635615,
+            "gem_seamless": 0.27915070019876453
+          }
+        }
+      },
+      "Ayodhya": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.3153112782555881,
+            "icon_seamless": 0.3434086352350004,
+            "gem_seamless": 0.34128008650941155
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3153112782555881,
+            "icon_seamless": 0.3434086352350004,
+            "gem_seamless": 0.34128008650941155
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3153112782555881,
+            "icon_seamless": 0.3434086352350004,
+            "gem_seamless": 0.34128008650941155
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.31783515797282696,
+            "icon_seamless": 0.33840967055411403,
+            "gem_seamless": 0.343755171473059
+          },
+          "24-72h": {
+            "gfs_seamless": 0.31783515797282696,
+            "icon_seamless": 0.33840967055411403,
+            "gem_seamless": 0.343755171473059
+          },
+          "72-168h": {
+            "gfs_seamless": 0.31783515797282696,
+            "icon_seamless": 0.33840967055411403,
+            "gem_seamless": 0.343755171473059
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.3432101414287365,
+            "icon_seamless": 0.33564038058728074,
+            "gem_seamless": 0.3211494779839827
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3432101414287365,
+            "icon_seamless": 0.33564038058728074,
+            "gem_seamless": 0.3211494779839827
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3432101414287365,
+            "icon_seamless": 0.33564038058728074,
+            "gem_seamless": 0.3211494779839827
+          }
+        }
+      },
+      "Mirzapur": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.32907156979626623,
+            "icon_seamless": 0.3712128447948071,
+            "gem_seamless": 0.2997155854089266
+          },
+          "24-72h": {
+            "gfs_seamless": 0.32907156979626623,
+            "icon_seamless": 0.3712128447948071,
+            "gem_seamless": 0.2997155854089266
+          },
+          "72-168h": {
+            "gfs_seamless": 0.32907156979626623,
+            "icon_seamless": 0.3712128447948071,
+            "gem_seamless": 0.2997155854089266
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.35136507530162675,
+            "icon_seamless": 0.3177370194896083,
+            "gem_seamless": 0.330897905208765
+          },
+          "24-72h": {
+            "gfs_seamless": 0.35136507530162675,
+            "icon_seamless": 0.3177370194896083,
+            "gem_seamless": 0.330897905208765
+          },
+          "72-168h": {
+            "gfs_seamless": 0.35136507530162675,
+            "icon_seamless": 0.3177370194896083,
+            "gem_seamless": 0.330897905208765
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.29605442906870094,
+            "icon_seamless": 0.37562412791116806,
+            "gem_seamless": 0.32832144302013105
+          },
+          "24-72h": {
+            "gfs_seamless": 0.29605442906870094,
+            "icon_seamless": 0.37562412791116806,
+            "gem_seamless": 0.32832144302013105
+          },
+          "72-168h": {
+            "gfs_seamless": 0.29605442906870094,
+            "icon_seamless": 0.37562412791116806,
+            "gem_seamless": 0.32832144302013105
+          }
+        }
+      },
+      "Saharanpur": {
+        "temperature_2m": {
+          "0-24h": {
+            "gfs_seamless": 0.2732582366901316,
+            "icon_seamless": 0.44004744168231047,
+            "gem_seamless": 0.2866943216275579
+          },
+          "24-72h": {
+            "gfs_seamless": 0.2732582366901316,
+            "icon_seamless": 0.44004744168231047,
+            "gem_seamless": 0.2866943216275579
+          },
+          "72-168h": {
+            "gfs_seamless": 0.2732582366901316,
+            "icon_seamless": 0.44004744168231047,
+            "gem_seamless": 0.2866943216275579
+          }
+        },
+        "precipitation": {
+          "0-24h": {
+            "gfs_seamless": 0.3333333333333333,
+            "icon_seamless": 0.3333333333333333,
+            "gem_seamless": 0.3333333333333333
+          },
+          "24-72h": {
+            "gfs_seamless": 0.3333333333333333,
+            "icon_seamless": 0.3333333333333333,
+            "gem_seamless": 0.3333333333333333
+          },
+          "72-168h": {
+            "gfs_seamless": 0.3333333333333333,
+            "icon_seamless": 0.3333333333333333,
+            "gem_seamless": 0.3333333333333333
+          }
+        },
+        "wind_speed_10m": {
+          "0-24h": {
+            "gfs_seamless": 0.2926388481398566,
+            "icon_seamless": 0.34937235556834645,
+            "gem_seamless": 0.35798879629179686
+          },
+          "24-72h": {
+            "gfs_seamless": 0.2926388481398566,
+            "icon_seamless": 0.34937235556834645,
+            "gem_seamless": 0.35798879629179686
+          },
+          "72-168h": {
+            "gfs_seamless": 0.2926388481398566,
+            "icon_seamless": 0.34937235556834645,
+            "gem_seamless": 0.35798879629179686
+          }
+        }
+      }
+    },
+    "global": {
+      "temperature_2m": {
+        "0-24h": {
+          "gfs_seamless": 0.31552038383639275,
+          "icon_seamless": 0.356924013387842,
+          "gem_seamless": 0.32755560277576523
+        },
+        "24-72h": {
+          "gfs_seamless": 0.31552038383639275,
+          "icon_seamless": 0.356924013387842,
+          "gem_seamless": 0.32755560277576523
+        },
+        "72-168h": {
+          "gfs_seamless": 0.31552038383639275,
+          "icon_seamless": 0.356924013387842,
+          "gem_seamless": 0.32755560277576523
+        }
+      },
+      "precipitation": {
+        "0-24h": {
+          "gfs_seamless": 0.3348650250850164,
+          "icon_seamless": 0.33193178401155354,
+          "gem_seamless": 0.33320319090343004
+        },
+        "24-72h": {
+          "gfs_seamless": 0.3348650250850164,
+          "icon_seamless": 0.33193178401155354,
+          "gem_seamless": 0.33320319090343004
+        },
+        "72-168h": {
+          "gfs_seamless": 0.3348650250850164,
+          "icon_seamless": 0.33193178401155354,
+          "gem_seamless": 0.33320319090343004
+        }
+      },
+      "wind_speed_10m": {
+        "0-24h": {
+          "gfs_seamless": 0.3051739538898386,
+          "icon_seamless": 0.36114410952665155,
+          "gem_seamless": 0.33368193658350986
+        },
+        "24-72h": {
+          "gfs_seamless": 0.3051739538898386,
+          "icon_seamless": 0.36114410952665155,
+          "gem_seamless": 0.33368193658350986
+        },
+        "72-168h": {
+          "gfs_seamless": 0.3051739538898386,
+          "icon_seamless": 0.36114410952665155,
+          "gem_seamless": 0.33368193658350986
+        }
+      }
+    }
+  },
+  "use_corrected": {
+    "per_city": {
+      "Lucknow": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        }
+      },
+      "Varanasi": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": false,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": false,
+          "gem_seamless": true
+        }
+      },
+      "Prayagraj": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": false,
+          "gem_seamless": true
+        }
+      },
+      "Kanpur": {
+        "temperature_2m": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        }
+      },
+      "Agra": {
+        "temperature_2m": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": false
+        },
+        "precipitation": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": false
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": false
+        }
+      },
+      "Meerut": {
+        "temperature_2m": {
+          "gfs_seamless": false,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": false
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        }
+      },
+      "Gorakhpur": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": false,
+          "gem_seamless": true
+        }
+      },
+      "Bareilly": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": false,
+          "icon_seamless": true,
+          "gem_seamless": false
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": true
+        }
+      },
+      "Jhansi": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": false
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": false
+        }
+      },
+      "Ayodhya": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        }
+      },
+      "Mirzapur": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": true,
+          "icon_seamless": true,
+          "gem_seamless": true
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": true,
+          "icon_seamless": false,
+          "gem_seamless": true
+        }
+      },
+      "Saharanpur": {
+        "temperature_2m": {
+          "gfs_seamless": true,
+          "icon_seamless": false,
+          "gem_seamless": true
+        },
+        "precipitation": {
+          "gfs_seamless": false,
+          "icon_seamless": false,
+          "gem_seamless": false
+        },
+        "wind_speed_10m": {
+          "gfs_seamless": false,
+          "icon_seamless": true,
+          "gem_seamless": true
+        }
+      }
+    },
+    "global": {
+      "temperature_2m": {
+        "gfs_seamless": true,
+        "icon_seamless": true,
+        "gem_seamless": true
+      },
+      "precipitation": {
+        "gfs_seamless": true,
+        "icon_seamless": true,
+        "gem_seamless": true
+      },
+      "wind_speed_10m": {
+        "gfs_seamless": true,
+        "icon_seamless": false,
+        "gem_seamless": true
+      }
+    }
+  }
+}

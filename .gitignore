@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+streamlit.log
+streamlit_err.log
+deploy_hf.py
